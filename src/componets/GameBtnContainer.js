@@ -1,7 +1,4 @@
-import React from 'react'
 import styles from '../styles/GameContainer.module.scss'
-import { useSelector } from 'react-redux'
-import { useState } from 'react'
 import useShotlessLoser from '../hooks/useShotlessLoser'
 import CountDownContainer from './CountDownContainer'
 
