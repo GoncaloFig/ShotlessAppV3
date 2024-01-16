@@ -44,7 +44,7 @@ app.use('^/$', (req, res, next) => {
             return res.send(
                 data.replace(
                     '<div id="root"></div>', 
-                    `<div id="root">${renderToString(<App/>)}</div>`)
+                    `<div id="root">${renderToString(ReactDOMServer.renderToString(<App/>))}</div>`)
             )
         })
 
