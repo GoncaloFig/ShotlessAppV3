@@ -3,7 +3,7 @@ const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './server/index.js',
+  entry: './src/server/index.js',
   target: 'node',
   output: {
     path: path.resolve('server-build'),

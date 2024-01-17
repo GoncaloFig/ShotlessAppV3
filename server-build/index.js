@@ -31,27 +31,6 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
-/***/ "./server/index.js":
-/*!*************************!*\
-  !*** ./server/index.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("// server/index.js\n//require(\"ignore-styles\");\n\n__webpack_require__(/*! @babel/register */ \"@babel/register\")({\n  ignore: [/(node_modules)/],\n  presets: [\"@babel/preset-env\", \"@babel/preset-react\"]\n});\n__webpack_require__(/*! ./server */ \"./server/server.js\");\n\n//# sourceURL=webpack://shotlessappv3/./server/index.js?");
-
-/***/ }),
-
-/***/ "./server/server.js":
-/*!**************************!*\
-  !*** ./server/server.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"express\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fs */ \"fs\");\n/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! path */ \"path\");\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom/server */ \"react-dom/server\");\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _src_App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/App */ \"./src/App.js\");\n\n\n\n\n\n\nconst PORT = 4000;\nconst app = express__WEBPACK_IMPORTED_MODULE_0___default()();\n\n// app.use('/static/css', express.static(path.resolve(__dirname, '..', 'build', 'static', 'css')));\napp.use('/static', express__WEBPACK_IMPORTED_MODULE_0___default()[\"static\"](path__WEBPACK_IMPORTED_MODULE_2___default().resolve(__dirname, '..', 'build', 'static'))); //<- LAST FAILURE\n\napp.use('/*', (req, res, next) => {\n  try {\n    console.log('Reading index.html file:', path__WEBPACK_IMPORTED_MODULE_2___default().resolve(__dirname, '..', 'build', 'index.html'));\n    fs__WEBPACK_IMPORTED_MODULE_1___default().readFile(path__WEBPACK_IMPORTED_MODULE_2___default().resolve(__dirname, '..', 'build', 'index.html'), 'utf-8', (err, data) => {\n      if (err) {\n        console.log(err);\n        return res.status(500).send(\"Some error happened\");\n      }\n      const appHtml = (0,react_dom_server__WEBPACK_IMPORTED_MODULE_4__.renderToString)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_src_App__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null));\n      const htmlOutput = data.replace('<div id=\"root\"></div>', \"<div id=\\\"root\\\">\".concat(appHtml, \"</div>\\n                <script defer=\\\"defer\\\" src=\\\"/static/js/main.js\\\"></script>\"));\n      console.log('Contents of index.html:', data);\n      console.log('Rendered HTML App:', (0,react_dom_server__WEBPACK_IMPORTED_MODULE_4__.renderToString)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_src_App__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null)));\n      return res.send(htmlOutput);\n    });\n  } catch (error) {\n    console.error(error);\n    return res.status(500).send('Internal Server Error');\n  }\n});\napp.listen(PORT, () => {\n  console.log(\"Server listening on port \".concat(PORT));\n});\n\n//# sourceURL=webpack://shotlessappv3/./server/server.js?");
-
-/***/ }),
-
 /***/ "./src/App.js":
 /*!********************!*\
   !*** ./src/App.js ***!
@@ -203,6 +182,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @reduxjs/toolkit */ \"@reduxjs/toolkit\");\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _rootReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../rootReducer */ \"./src/redux/rootReducer.js\");\n\n\nconst store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.configureStore)({\n  reducer: _rootReducer__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (store);\n\n//# sourceURL=webpack://shotlessappv3/./src/redux/store/store.js?");
+
+/***/ }),
+
+/***/ "./src/server/index.js":
+/*!*****************************!*\
+  !*** ./src/server/index.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("// server/index.js\n//require(\"ignore-styles\");\n\n__webpack_require__(/*! @babel/register */ \"@babel/register\")({\n  ignore: [/(node_modules)/],\n  presets: [\"@babel/preset-env\", \"@babel/preset-react\"]\n});\n__webpack_require__(/*! ./server */ \"./src/server/server.js\");\n\n//# sourceURL=webpack://shotlessappv3/./src/server/index.js?");
+
+/***/ }),
+
+/***/ "./src/server/server.js":
+/*!******************************!*\
+  !*** ./src/server/server.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"express\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fs */ \"fs\");\n/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! path */ \"path\");\n/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom/server */ \"react-dom/server\");\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../App */ \"./src/App.js\");\n\n\n\n\n\n\nconst PORT = 4000;\nconst app = express__WEBPACK_IMPORTED_MODULE_0___default()();\n\n// app.use('/static/css', express.static(path.resolve(__dirname, '..', 'build', 'static', 'css')));\napp.use('/static', express__WEBPACK_IMPORTED_MODULE_0___default()[\"static\"](path__WEBPACK_IMPORTED_MODULE_2___default().resolve(__dirname, '..', 'build', 'static'))); //<- LAST FAILURE\n\napp.use('/*', (req, res, next) => {\n  try {\n    console.log('Reading index.html file:', path__WEBPACK_IMPORTED_MODULE_2___default().resolve(__dirname, '..', 'build', 'index.html'));\n    fs__WEBPACK_IMPORTED_MODULE_1___default().readFile(path__WEBPACK_IMPORTED_MODULE_2___default().resolve(__dirname, '..', 'build', 'index.html'), 'utf-8', (err, data) => {\n      if (err) {\n        console.log(err);\n        return res.status(500).send(\"Some error happened\");\n      }\n      const appHtml = (0,react_dom_server__WEBPACK_IMPORTED_MODULE_4__.renderToString)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_App__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null));\n      const htmlOutput = data.replace('<div id=\"root\"></div>', \"<div id=\\\"root\\\">\".concat(appHtml, \"</div>\\n                <script defer=\\\"defer\\\" src=\\\"/static/js/main.js\\\"></script>\"));\n      console.log('Contents of index.html:', data);\n      console.log('Rendered HTML App:', (0,react_dom_server__WEBPACK_IMPORTED_MODULE_4__.renderToString)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_App__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null)));\n      return res.send(htmlOutput);\n    });\n  } catch (error) {\n    console.error(error);\n    return res.status(500).send('Internal Server Error');\n  }\n});\napp.listen(PORT, () => {\n  console.log(\"Server listening on port \".concat(PORT));\n});\n\n//# sourceURL=webpack://shotlessappv3/./src/server/server.js?");
 
 /***/ }),
 
@@ -465,7 +465,7 @@ module.exports = require("path");
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./server/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/server/index.js");
 /******/ 	
 /******/ })()
 ;
