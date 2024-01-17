@@ -1,17 +1,10 @@
 
 [build]
   command = "npm run build"  # Adjust based on your client-side build script
-  functions = "functions"  # Directory where Netlify functions (server-side code) are built
+  functions = "server-build"  # Directory where Netlify functions (server-side code) are built
   publish = "build"  # Adjust based on your client-side build output directory
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/server/:splat"  # Adjust based on your server function path
-  status = 200
-  force = true
-  conditions = {Language = ["en"]}
