@@ -73,7 +73,7 @@ const EditPlayersContainer = (props) => {
         <p>You need to add some players</p>
     </div>
     )
-    
+
 
     useEffect(() => {
         setPlayers(props.players)
