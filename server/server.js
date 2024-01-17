@@ -18,10 +18,14 @@ app.use('/*', (req, res, next) => {
                 console.log(err)
                 return res.status(500).send("Some error happened")
             }
+            //const mainJsFilename = fs.readdirSync(path.join(buildPath, 'static', 'js')).find(file => file.startsWith('main.') && file.endsWith('.js'));
+
             return res.send(
                 data.replace(
                     '<div id="root"></div>', 
-                    `<div id="root">${renderToString(<App/>)}</div>`)
+                    `<div id="root">${renderToString(<App/>)}</div>
+                    <script defer="defer" src="/static/js/main.js"></script>`
+                )
             )
         })
 
