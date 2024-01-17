@@ -12,9 +12,9 @@ const app = express();
 const router = express.Router()
 
 // app.use('/static/css', express.static(path.resolve(__dirname, '..', 'build', 'static', 'css')));
-app.use('/static', express.static(path.resolve(__dirname, '..', 'build', 'static')));  //<- LAST FAILURE
+router.use('/static', express.static(path.resolve(__dirname, '..', 'build', 'static')));  //<- LAST FAILURE
 
-app.use('/*', (req, res, next) => {
+router.use('/*', (req, res, next) => {
     try {
         console.log('Reading index.html file:', path.resolve(__dirname, '..', 'build', 'index.html'));
         fs.readFile(path.resolve(__dirname, '..', 'build', 'index.html'), 'utf-8', (err, data) => {
@@ -43,10 +43,10 @@ app.use('/*', (req, res, next) => {
     }
 });
 
-app.listen(PORT, () => {
+router.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
 
-app.use('/.netlify/src/server', router)
+router.use('/.netlify/src/server', router)
 
 module.exports.handler = serverless(app)
