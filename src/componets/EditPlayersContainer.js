@@ -15,8 +15,6 @@ const EditPlayersContainer = (props) => {
     const [playerNameChanged, setPlayerNameChanged] = useState("")
     
     const isAnyPlayerEditing = props.players.some(player => player.isEditing === true)
-
-    const [alreadyEditingPlayer, setAlreadyEditingPlayer] = useState(false);
     
     const handleAddPlayer = () => {
         if(newPlayer.name && newPlayer.name.trim() !== ""){
@@ -40,9 +38,6 @@ const EditPlayersContainer = (props) => {
     }
 
     const handleChangeCurrentPlayerName = (playerId) => {
-        // to do
-        //setAlreadyEditingPlayer(false)
-        //debugger
         const newName = playerNameChanged
         if(newName.trim().length > 0){
             props.onChangePlayerName(playerId, newName)
