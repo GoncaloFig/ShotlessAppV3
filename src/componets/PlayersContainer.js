@@ -1,7 +1,8 @@
 import React from 'react'
 import PlayerBadge from './PlayerBadge';
 import { useSelector } from 'react-redux';
-import styles from '../styles/PlayersContainer.module.scss'
+// import styles from '../styles/PlayersContainer.module.scss'
+import '../styles/PlayersContainer.scss'
 
 const PlayersContainer = ({handleOpenEditPlayers}) => {
 
@@ -9,26 +10,26 @@ const PlayersContainer = ({handleOpenEditPlayers}) => {
     //const [players, setPlayers] = useState(props.players)
 
     const handleLoadPlayers = players.map((playerItem, index) =>
-        <PlayerBadge data-key={playerItem.id} value={playerItem.name}/>
+        <PlayerBadge key={playerItem.id} data-key={playerItem.id} value={playerItem.name}/>
     );
 
     return (
-        <div className={styles.playersContainer}>
-            <div className={styles.playersListContainer}>
-                <div className={styles.playersListOverflow}>
+        <div className="playersContainer">
+            <div className="playersListContainer">
+                <div className="playersListOverflow">
                     {/* <PlayerBtn/> */}
                     {players.length > 0 ? (
                         handleLoadPlayers
                     ) : (
-                    <div className={styles.noPlayersDiv}>
+                    <div className="noPlayersDiv">
                         <p>You need to add some players</p>
                     </div>
                     )}
                 </div>
             </div>
-            <div className={styles.addPlayerContainer}>
-                {/* <button onClick={function(){ openEditPlayers()}} className={styles.addPlayerBtn}><FaPlus/></button> */}
-                <button onClick={function(){ handleOpenEditPlayers()}} className={styles.addPlayerBtn}>Add</button>
+            <div className="addPlayerContainer">
+                {/* <button onClick={function(){ openEditPlayers()}} className="addPlayerBtn}><FaPlus/></button> */}
+                <button onClick={handleOpenEditPlayers} className="addPlayerBtn">Add</button>
             </div>
         </div>
     )

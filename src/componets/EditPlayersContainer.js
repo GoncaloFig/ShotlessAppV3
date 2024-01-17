@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 import {addPlayer, removePlayer, changePlayerName} from '../redux'
 import { v4 as uuidv4 } from 'uuid'
-import styles from '../styles/EditPlayersContainer.module.scss'
+import '../styles/EditPlayersContainer.scss'
 import { ImCross, ImArrowLeft2, ImPencil2, ImFloppyDisk  } from "react-icons/im";
 
 const EditPlayersContainer = (props) => {
@@ -19,6 +19,7 @@ const EditPlayersContainer = (props) => {
         if(newPlayer.name && newPlayer.name.trim() !== ""){
             const playerToAdd = {...newPlayer, id: uuidv4()}
             console.log(playerToAdd)
+
             props.onAddPlayer(playerToAdd)
             setNewPlayer({})
             setPlayerNameInputEnable(false)
@@ -38,8 +39,10 @@ const EditPlayersContainer = (props) => {
     const handleChangeCurrentPlayerName = (playerId) => {
         // to do
         const newName = playerNameChanged
-        props.onChangePlayerName(playerId, newName)
-        setisEditingPlayer(false)
+        if(newName.trim().length > 0){
+            props.onChangePlayerName(playerId, newName)
+            setisEditingPlayer(false)
+        }
     }
 
     const handleClickEditPlayer = () => {
@@ -48,18 +51,18 @@ const EditPlayersContainer = (props) => {
 
     const handleLoadCurrentPlayers = players.length > 0 ? (
         players.map((player) =>
-            <div className={styles.playersInputContainer}>
+            <div className="playersInputContainer" key={player.id}>
                 <input type="text" key={player.id} defaultValue={player.name} onChange={(e) => setPlayerNameChanged(e.target.value)} disabled={!isEditingPlayer}/>
                 {!isEditingPlayer ? 
-                    <ImPencil2 className={styles.editPlayerIcon} data-key={player.id} onClick={handleClickEditPlayer}/>
+                    <ImPencil2 className="editPlayerIcon" data-key={player.id} onClick={handleClickEditPlayer}/>
                     :
-                    <ImFloppyDisk className={styles.saveEditPlayerIcon} data-key={player.id} onClick={() => handleChangeCurrentPlayerName(player.id)}/>
+                    <ImFloppyDisk className="saveEditPlayerIcon" data-key={player.id} onClick={() => handleChangeCurrentPlayerName(player.id)}/>
                 }
-                <ImCross className={styles.deletePlayerIcon} data-key={player.id} onClick={() => handleRemovePlayer(player.id)}/>
+                <ImCross className="deletePlayerIcon" data-key={player.id} onClick={() => handleRemovePlayer(player.id)}/>
             </div>
         ) 
     ) : (
-    <div className={styles.noPlayersDiv}>
+    <div className="noPlayersDiv">
         <p>You need to add some players</p>
     </div>
     )
@@ -70,21 +73,19 @@ const EditPlayersContainer = (props) => {
     },[props.players])
 
     return (
-        <div className={styles.playersEditContainer}>
-            <div className={styles.editTitleContainer}>
-                <ImArrowLeft2 className={styles.goBackFromPlayers} onClick={function(){ props.handleOpenEditPlayers()}}/>
-                <h1 className={styles.editPlayersTitle}>Edit Players</h1>
+        <div className="playersEditContainer">
+            <div className="editTitleContainer">
+                <ImArrowLeft2 className="goBackFromPlayers" onClick={function(){ props.handleOpenEditPlayers()}}/>
+                <h1 className="editPlayersTitle">Edit Players</h1>
             </div>
-            <div className={styles.playersEditListContainer}>
-                <div className={styles.playersEditListOverflow}>
+            <div className="playersEditListContainer">
+                <div className="playersEditListOverflow">
                     {handleLoadCurrentPlayers}
-                    {/* <button onClick={handleAddPlayer}>Add</button> */}
                 </div>
-                <h3 className={styles.newPlayerTitle}>New Player</h3>
-                    <div className={styles.playersNewInputContainer}>
+                <h3 className="newPlayerTitle">New Player</h3>
+                    <div className="playersNewInputContainer">
                         <input type="text" maxlength="25" value={newPlayer.name || ''} onChange={handleInputNameChange}/>
-                        {/* <input type='text' value={newPlayer.name || ''} onChange={handleInputChange}></input> */}
-                        <button className={`${playerNameInputEnable ? styles.savaPlayerBtn : `${styles.savaPlayerBtn} ${styles.disabledButton}`} `} onClick={handleAddPlayer} >Add</button>
+                        <button className={`${playerNameInputEnable ? "savePlayerBtn" : "savePlayerBtn disabledButton"}`} onClick={handleAddPlayer}>Add</button>
                     </div>
                     <br/>
             </div>

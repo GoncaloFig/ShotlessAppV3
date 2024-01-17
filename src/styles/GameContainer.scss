@@ -44,6 +44,10 @@
         // margin-left:auto;
         // margin-right:auto;
     }
+
+    .disabledGoButton{
+        background: #c1c1c1 !important;
+    }
 }
 
 @media (max-width: 1170px) {
@@ -86,5 +90,9 @@
         // right:0;
         // margin-left:auto;
         // margin-right:auto;
+    }
+
+    .disabledGoButton{
+        background: #c1c1c1 !important;
     }
 }

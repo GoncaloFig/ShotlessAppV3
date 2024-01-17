@@ -1,18 +1,23 @@
 import React from 'react';
-import ReactDOM, { hydrateRoot } from 'react-dom/client';
+import { hydrateRoot } from 'react-dom/client';
 import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom";
+import { hydrate } from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+hydrate(<App />, document.getElementById("root"));
+
 // const app = document.getElementById('root');
 // const root = ReactDOM.hydrateRoot(app, <App suppressHydrationWarning/>);
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

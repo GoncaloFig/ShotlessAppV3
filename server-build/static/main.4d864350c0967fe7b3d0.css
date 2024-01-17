@@ -1,0 +1,396 @@
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/EditPlayersContainer.module.scss ***!
+  \******************************************************************************************************************************************************************/
+@media (min-width: 1170px) {
+  .playersEditContainer__mLWHc {
+    height: 494px;
+    width: 50vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14% 66% 19%;
+    position: relative;
+  }
+  .playersEditListContainer__qtv4R {
+    background-color: transparent;
+    padding: 25px 10px 15px 10px;
+    display: grid;
+    width: 40vw;
+    margin: 0 auto;
+  }
+  .playersEditListOverflow__eWqOe {
+    background-color: transparent;
+    overflow-y: scroll;
+    padding: 0 14px;
+    height: 30vh;
+  }
+  .editPlayerContainer__ncNb2 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .editPlayerBtn__JCmGS {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 341px;
+    height: 72px;
+    font-weight: 653;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+  .editTitleContainer__eRgvE {
+    position: relative;
+    display: flex;
+    width: 36vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .disabledButton__XbBM7 {
+    background: #c1c1c1 !important;
+  }
+  .editPlayersTitle__RKOcx {
+    display: flex;
+    justify-content: center;
+  }
+  .playersInputContainer__npSGH {
+    display: grid;
+    grid-template-columns: 84% 8% 8%;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersInputContainer__npSGH input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .playersNewInputContainer__WOnHi {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersNewInputContainer__WOnHi input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .deletePlayerIcon__qZedj {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgba(187, 10, 10, 0.5490196078);
+    cursor: pointer;
+  }
+  .editPlayerIcon__z2TRO {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #3d99fe;
+    cursor: pointer;
+  }
+  .saveEditPlayerIcon__BJ6aE {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #127522;
+    cursor: pointer;
+  }
+  .goBackFromPlayers__C2Uur {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 20px;
+  }
+  .newPlayerTitle__JBSXQ {
+    text-align: center;
+  }
+  .savaPlayerBtn__wFr28 {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 225px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 33px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    display: flex;
+  }
+}
+@media (max-width: 1170px) {
+  .playersEditContainer__mLWHc {
+    height: 494px;
+    width: 93vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14% 66% 19%;
+    position: relative;
+  }
+  .playersEditListContainer__qtv4R {
+    background-color: transparent;
+    padding: 25px 10px 15px 10px;
+    display: grid;
+  }
+  .playersEditListOverflow__eWqOe {
+    background-color: transparent;
+    overflow: scroll;
+    padding: 0 14px;
+    height: 30vh;
+  }
+  .editPlayerContainer__ncNb2 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .editPlayerBtn__JCmGS {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 341px;
+    height: 72px;
+    font-weight: 653;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .editTitleContainer__eRgvE {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .disabledButton__XbBM7 {
+    background: #c1c1c1 !important;
+  }
+  .editPlayersTitle__RKOcx {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .playersInputContainer__npSGH {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersInputContainer__npSGH input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .playersNewInputContainer__WOnHi {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersNewInputContainer__WOnHi input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .deletePlayerIcon__qZedj {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgba(187, 10, 10, 0.5490196078);
+  }
+  .editPlayerIcon__z2TRO {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #3d99fe;
+    cursor: pointer;
+  }
+  .saveEditPlayerIcon__BJ6aE {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #127522;
+    cursor: pointer;
+  }
+  .goBackFromPlayers__C2Uur {
+    position: absolute;
+    font-size: 20px;
+  }
+  .newPlayerTitle__JBSXQ {
+    text-align: center;
+  }
+  .savaPlayerBtn__wFr28 {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 225px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 33px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    display: flex;
+    cursor: pointer;
+  }
+}
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/PlayerBadge.module.scss ***!
+  \*********************************************************************************************************************************************************/
+.playerBadge__r4V8X {
+  background: #EAE9EC;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 332px;
+  height: 70px;
+  font-weight: 653;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  color: #454545;
+  font-variation-settings: "slnt" 0;
+  background: url(a3ff01fb34a1370bde0d.png);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*!**************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/PlayersContainer.module.scss ***!
+  \**************************************************************************************************************************************************************/
+.playersListContainer__GCSIb {
+  background-color: transparent;
+  justify-content: center;
+  padding: 25px 10px 15px 10px;
+  display: grid;
+  grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+}
+
+.addPlayerContainer__obTFc {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addPlayerBtn__U0iFg {
+  background: #3D99FE;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 341px;
+  height: 72px;
+  font-weight: 653;
+  font-size: 48px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.noPlayersDiv__G5llh {
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  /* width: 332px; */
+  /* height: 70px; */
+  /* font-weight: 653; */
+  font-size: 25px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  margin: 0 0 30px 0;
+  color: #454545;
+}
+
+@media (min-width: 1170px) {
+  .playersContainer__H2wRN {
+    height: 66vh;
+    width: 20vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .playersListOverflow__qZsSi {
+    background-color: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+    height: 50vh;
+  }
+}
+@media (max-width: 1170px) {
+  .playersContainer__H2wRN {
+    height: 66vh;
+    width: 100vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .playersListOverflow__qZsSi {
+    background-color: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+    height: 50vh;
+  }
+}
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/CountDownContainer.scss ***!
+  \*****************************************************************************************************************************/
+

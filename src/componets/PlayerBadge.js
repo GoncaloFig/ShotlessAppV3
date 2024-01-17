@@ -1,8 +1,9 @@
 import React from 'react'
-import styles from '../styles/PlayerBadge.module.scss'
+// import styles from '../styles/PlayerBadge.module.scss'
+import '../styles/PlayerBadge.scss'
 const PlayerBadge = (props) => {
     return (
-        <button className={styles.playerBadge}>{props.value}</button>
+        <button className="playerBadge">{props.value}</button>
     );
 }
 

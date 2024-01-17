@@ -1,0 +1,459 @@
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/GameContainer.module.scss ***!
+  \*******************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Titan+One&display=swap);
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/EditPlayersContainer.module.scss ***!
+  \**************************************************************************************************************************************/
+@media (min-width: 1170px) {
+  .mLWHcOchXuArVQJny1Ix {
+    height: 494px;
+    width: 50vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14% 66% 19%;
+    position: relative;
+  }
+  .qtv4R0eGLJ63FCTuoHYA {
+    background-color: transparent;
+    padding: 25px 10px 15px 10px;
+    display: grid;
+    width: 40vw;
+    margin: 0 auto;
+  }
+  .eWqOel2wfYwQwbUUmHbH {
+    background-color: transparent;
+    overflow-y: scroll;
+    padding: 0 14px;
+    height: 30vh;
+  }
+  .ncNb2t8Yr1GQ8U8YsEUT {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .JCmGSVVeQyn7mzdiYGEz {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 341px;
+    height: 72px;
+    font-weight: 653;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+  .eRgvE_KbYITM9_Sb_ToR {
+    position: relative;
+    display: flex;
+    width: 36vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .XbBM7HOs1f4KWvfnhX6e {
+    background: #c1c1c1 !important;
+  }
+  .RKOcxYgYXPbUCnrm1Efc {
+    display: flex;
+    justify-content: center;
+  }
+  .npSGHSzHfiZ8TCo9hj1m {
+    display: grid;
+    grid-template-columns: 84% 8% 8%;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .npSGHSzHfiZ8TCo9hj1m input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .WOnHiLaOtP9kSr6irKZf {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .WOnHiLaOtP9kSr6irKZf input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .qZedj36HGqET02J3s9yl {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgba(187, 10, 10, 0.5490196078);
+    cursor: pointer;
+  }
+  .z2TROhBIEvuchDtJ2BC5 {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #3d99fe;
+    cursor: pointer;
+  }
+  .BJ6aE4Zzr8leZg_ue0Df {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #127522;
+    cursor: pointer;
+  }
+  .C2UurB1wzdnjWopqTM4r {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 20px;
+  }
+  .JBSXQ85BcYnFgxOXxkB0 {
+    text-align: center;
+  }
+  .wFr28Yi8wo9q_frLUWDQ {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 225px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 33px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    display: flex;
+  }
+}
+@media (max-width: 1170px) {
+  .mLWHcOchXuArVQJny1Ix {
+    height: 494px;
+    width: 93vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14% 66% 19%;
+    position: relative;
+  }
+  .qtv4R0eGLJ63FCTuoHYA {
+    background-color: transparent;
+    padding: 25px 10px 15px 10px;
+    display: grid;
+  }
+  .eWqOel2wfYwQwbUUmHbH {
+    background-color: transparent;
+    overflow: scroll;
+    padding: 0 14px;
+    height: 30vh;
+  }
+  .ncNb2t8Yr1GQ8U8YsEUT {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .JCmGSVVeQyn7mzdiYGEz {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 341px;
+    height: 72px;
+    font-weight: 653;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .eRgvE_KbYITM9_Sb_ToR {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .XbBM7HOs1f4KWvfnhX6e {
+    background: #c1c1c1 !important;
+  }
+  .RKOcxYgYXPbUCnrm1Efc {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .npSGHSzHfiZ8TCo9hj1m {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .npSGHSzHfiZ8TCo9hj1m input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .WOnHiLaOtP9kSr6irKZf {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .WOnHiLaOtP9kSr6irKZf input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .qZedj36HGqET02J3s9yl {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgba(187, 10, 10, 0.5490196078);
+  }
+  .z2TROhBIEvuchDtJ2BC5 {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #3d99fe;
+    cursor: pointer;
+  }
+  .BJ6aE4Zzr8leZg_ue0Df {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #127522;
+    cursor: pointer;
+  }
+  .C2UurB1wzdnjWopqTM4r {
+    position: absolute;
+    font-size: 20px;
+  }
+  .JBSXQ85BcYnFgxOXxkB0 {
+    text-align: center;
+  }
+  .wFr28Yi8wo9q_frLUWDQ {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 225px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 33px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    display: flex;
+    cursor: pointer;
+  }
+}
+/*!***********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/GameContainer.module.scss (1) ***!
+  \***********************************************************************************************************************************/
+@media (min-width: 1170px) {
+  .XsyEuL6uBN5uXlRINq24 {
+    background: #E3F1FB;
+    height: 34vh;
+    width: 100vw;
+  }
+  .S6oPRI7tthLMce_aU7eJ {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background: #3D99FE;
+    border: 5px solid #F5F5F5;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .ByhUzST14w_g79ndUtX1 {
+    top: 25px;
+    font-family: "Titan One", cursive;
+    font-weight: 800;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #202124;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 1170px) {
+  .XsyEuL6uBN5uXlRINq24 {
+    background: #E3F1FB;
+    height: 34vh;
+    width: 100vw;
+  }
+  .S6oPRI7tthLMce_aU7eJ {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    background: #3D99FE;
+    border: 5px solid #F5F5F5;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .ByhUzST14w_g79ndUtX1 {
+    top: 25px;
+    font-family: "Titan One", cursive;
+    font-weight: 800;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #202124;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+  }
+}
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/PlayerBadge.module.scss ***!
+  \*****************************************************************************************************************************/
+.r4V8XnX6oMUhNQ_SjK6s {
+  background: #EAE9EC;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 332px;
+  height: 70px;
+  font-weight: 653;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  color: #454545;
+  font-variation-settings: "slnt" 0;
+  background: url(a3ff01fb34a1370bde0d.png);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*!**********************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/PlayersContainer.module.scss ***!
+  \**********************************************************************************************************************************/
+.GCSIbwniWG5Exg3rS5Ax {
+  background-color: transparent;
+  justify-content: center;
+  padding: 25px 10px 15px 10px;
+  display: grid;
+  grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+}
+
+.obTFc7AsdDZdEJzzfNLC {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.U0iFgYa21L2jLbfvJe7s {
+  background: #3D99FE;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 341px;
+  height: 72px;
+  font-weight: 653;
+  font-size: 48px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.G5llh5zCEIjjlS4ei5Ct {
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  /* width: 332px; */
+  /* height: 70px; */
+  /* font-weight: 653; */
+  font-size: 25px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  margin: 0 0 30px 0;
+  color: #454545;
+}
+
+@media (min-width: 1170px) {
+  .H2wRNdf2UscoW5_BPylT {
+    height: 66vh;
+    width: 20vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .qZsSigwF6unBxG97ZpSN {
+    background-color: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+    height: 50vh;
+  }
+}
+@media (max-width: 1170px) {
+  .H2wRNdf2UscoW5_BPylT {
+    height: 66vh;
+    width: 100vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .qZsSigwF6unBxG97ZpSN {
+    background-color: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+    height: 50vh;
+  }
+}
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/CountDownContainer.scss ***!
+  \*****************************************************************************************************************************/
+
