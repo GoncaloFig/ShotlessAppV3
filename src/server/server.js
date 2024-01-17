@@ -4,12 +4,12 @@ import path from 'path'
 import React from "react";
 import { renderToString } from 'react-dom/server';
 import App from '../App';
-// import serverless from 'serverless-http'
+import serverless from 'serverless-http'
 
 const PORT = 4000;
 const app = express();
 
-// const router = express.Router()
+const router = express.Router()
 
 // app.use('/static/css', express.static(path.resolve(__dirname, '..', 'build', 'static', 'css')));
 app.use('/static', express.static(path.resolve(__dirname, '..', 'build', 'static')));  //<- LAST FAILURE
@@ -47,6 +47,6 @@ app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
 
-// app.use('/.netlify/src/server', router)
+app.use('/.netlify/src/server', router)
 
-// module.exports.handler = serverless(app)
+module.exports.handler = serverless(app)
