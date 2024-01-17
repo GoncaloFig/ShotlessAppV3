@@ -13,17 +13,23 @@ app.use('/static', express.static(path.resolve(__dirname, '..', 'build', 'static
 
 app.use('/*', (req, res, next) => {
     try {
+        console.log('Reading index.html file:', path.resolve(__dirname, '..', 'build', 'index.html'));
         fs.readFile(path.resolve(__dirname, '..', 'build', 'index.html'), 'utf-8', (err, data) => {
             if(err){
                 console.log(err)
                 return res.status(500).send("Some error happened")
             }
 
+            const appHtml = renderToString(<App/>);
+
             const htmlOutput = data.replace(
                 '<div id="root"></div>', 
-                `<div id="root">${renderToString(<App/>)}</div>
+                `<div id="root">${appHtml}</div>
                 <script defer="defer" src="/static/js/main.js"></script>`
             )
+
+            console.log('Contents of index.html:', data);
+            console.log('Rendered HTML App:', renderToString(<App/>));
 
             return res.send(htmlOutput)
         })
