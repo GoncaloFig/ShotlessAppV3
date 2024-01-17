@@ -1,12 +1,14 @@
 import { ADD_PLAYER } from "./playerTypes"
 import { REMOVE_PLAYER } from "./playerTypes"
 import { CHANGE_PLAYER_NAME } from "./playerTypes"
+import { CHANGE_PLAYER_TO_EDIT } from "./playerTypes"
 
 const initialState = {
     players : [
         {
             id: 1,
-            name: "Gonyfig"
+            name: "Gonyfig",
+            isEditing : false
         }
     ]
 }
@@ -22,6 +24,21 @@ const playerReducer = (state = initialState, action) => {
             ...state,
             players : state.players.filter((player) => player.id !== action.payload)
         }
+
+        case CHANGE_PLAYER_TO_EDIT:
+            //debugger
+            const updatedPlayersEdit = state.players.map(player => {
+                if(player.id === action.payload){
+                    return {...player, isEditing: !player.isEditing}
+                }else {
+                    return player
+                }
+            })
+
+            return {
+                ...state,
+                players : updatedPlayersEdit
+            }
 
         case CHANGE_PLAYER_NAME: 
             const {playerId, playerName} = action.payload

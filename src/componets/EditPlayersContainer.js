@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
-import {addPlayer, removePlayer, changePlayerName} from '../redux'
+import {addPlayer, removePlayer, changePlayerName, changePlayerToEdit} from '../redux'
 import { v4 as uuidv4 } from 'uuid'
 import '../styles/EditPlayersContainer.scss'
 import { ImCross, ImArrowLeft2, ImPencil2, ImFloppyDisk  } from "react-icons/im";
@@ -8,16 +8,19 @@ import { ImCross, ImArrowLeft2, ImPencil2, ImFloppyDisk  } from "react-icons/im"
 const EditPlayersContainer = (props) => {
 
     const [players, setPlayers] = useState(props.players)
-    const [newPlayer, setNewPlayer] = useState({id: null, name: ""})
+    const [newPlayer, setNewPlayer] = useState({id: null, name: "", isEditing: false})
 
     const [playerNameInputEnable, setPlayerNameInputEnable] = useState(false);
 
     const [playerNameChanged, setPlayerNameChanged] = useState("")
-    const [isEditingPlayer, setisEditingPlayer] = useState(false)
+    
+    const isAnyPlayerEditing = props.players.some(player => player.isEditing === true)
+
+    const [alreadyEditingPlayer, setAlreadyEditingPlayer] = useState(false);
     
     const handleAddPlayer = () => {
         if(newPlayer.name && newPlayer.name.trim() !== ""){
-            const playerToAdd = {...newPlayer, id: uuidv4()}
+            const playerToAdd = {...newPlayer, id: uuidv4(), isEditing: false}
             console.log(playerToAdd)
 
             props.onAddPlayer(playerToAdd)
@@ -38,25 +41,34 @@ const EditPlayersContainer = (props) => {
 
     const handleChangeCurrentPlayerName = (playerId) => {
         // to do
+        //setAlreadyEditingPlayer(false)
+        //debugger
         const newName = playerNameChanged
         if(newName.trim().length > 0){
             props.onChangePlayerName(playerId, newName)
-            setisEditingPlayer(false)
+            props.onClickEditPlayer(playerId)
         }
     }
 
-    const handleClickEditPlayer = () => {
-        setisEditingPlayer(true)
+    const handleClickEditPlayer = (playerId, currentName) => {
+        console.log(isAnyPlayerEditing)
+
+        if(!isAnyPlayerEditing){
+            console.log(currentName)
+            setPlayerNameChanged(currentName)
+            props.onClickEditPlayer(playerId)
+        }
     }
 
     const handleLoadCurrentPlayers = players.length > 0 ? (
         players.map((player) =>
             <div className="playersInputContainer" key={player.id}>
-                <input type="text" key={player.id} defaultValue={player.name} onChange={(e) => setPlayerNameChanged(e.target.value)} disabled={!isEditingPlayer}/>
-                {!isEditingPlayer ? 
-                    <ImPencil2 className="editPlayerIcon" data-key={player.id} onClick={handleClickEditPlayer}/>
+                <input type="text" key={player.id} defaultValue={player.name} onChange={(e) => setPlayerNameChanged(e.target.value)} disabled={!player.isEditing}/>
+                {/* {!isEditingPlayer && player.id !== editingPlayerId ?  */}
+                {!player.isEditing ? 
+                    <ImPencil2 disabled className="editPlayerIcon" data-key={player.id} onClick={() => {handleClickEditPlayer(player.id, player.name)}}/>
                     :
-                    <ImFloppyDisk className="saveEditPlayerIcon" data-key={player.id} onClick={() => handleChangeCurrentPlayerName(player.id)}/>
+                    <ImFloppyDisk className="saveEditPlayerIcon" data-key={player.id} onClick={() => {handleChangeCurrentPlayerName(player.id)}}/>
                 }
                 <ImCross className="deletePlayerIcon" data-key={player.id} onClick={() => handleRemovePlayer(player.id)}/>
             </div>
@@ -109,6 +121,9 @@ const mapDispatchToProps = (dispatch) => {
         },
         onChangePlayerName : (valueId, valueName) => {
             dispatch(changePlayerName(valueId, valueName))
+        },
+        onClickEditPlayer : (valueId) => {
+            dispatch(changePlayerToEdit(valueId))
         }
     }
 }
