@@ -32,7 +32,7 @@
     "dev:build-client": "react-scripts start",
     "dev:build-server": "webpack --config webpack.server.js --mode=development -w",
     "dev:start": "nodemon ./server-build/index.js",
-    "dev": "npm-run-all --parallel dev:build-client dev:build-server"
+    "dev": "npm-run-all --parallel dev:build-server dev:start"
   },
   "eslintConfig": {
     "extends": [
