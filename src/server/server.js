@@ -4,17 +4,17 @@ import path from 'path'
 import React from "react";
 import { renderToString } from 'react-dom/server';
 import App from '../App';
-import serverless from 'serverless-http'
+// import serverless from 'serverless-http'
 
 const PORT = 4000;
 const app = express();
 
-const router = express.Router()
+// const router = express.Router()
 
 // app.use('/static/css', express.static(path.resolve(__dirname, '..', 'build', 'static', 'css')));
-router.use('/static', express.static(path.resolve(__dirname, '..', 'build', 'static')));  //<- LAST FAILURE
+app.use('/static', express.static(path.resolve(__dirname, '..', 'build', 'static')));  //<- LAST FAILURE
 
-router.use('/*', (req, res, next) => {
+app.use('/*', (req, res, next) => {
     try {
         console.log('Reading index.html file:', path.resolve(__dirname, '..', 'build', 'index.html'));
         fs.readFile(path.resolve(__dirname, '..', 'build', 'index.html'), 'utf-8', (err, data) => {
@@ -43,10 +43,10 @@ router.use('/*', (req, res, next) => {
     }
 });
 
-router.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
 });
 
-router.use('/.netlify/src/server', router)
+// app.use('/.netlify/src/server', router)
 
-module.exports.handler = serverless(app)
+// module.exports.handler = serverless(app)
