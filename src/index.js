@@ -1,10 +1,10 @@
 import React from 'react';
-import { hydrateRoot } from 'react-dom/client';
+// import { hydrateRoot } from 'react-dom/client';
 import './index.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { hydrate } from 'react-dom';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
