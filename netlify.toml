@@ -1,6 +1,6 @@
 
 [build]
-  command = "npm run dev"  # Adjust based on your client-side build script
+  command = "npm run build"  # Adjust based on your client-side build script
   functions = "functions"  # Directory where Netlify functions (server-side code) are built
   publish = "build"  # Adjust based on your client-side build output directory
 
