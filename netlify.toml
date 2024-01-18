@@ -2,14 +2,7 @@
   # Specify the build command
   command = "npm run build"
 
-[[plugins]]
-  # Install the Node.js version specified in your package.json
-  package = "netlify-plugin-install-node"
-  [plugins.inputs]
-    node_version = "14"
-
 [[functions]]
-  # Define your serverless function
   name = "server"
   path = "src/server"
   command = "npm run build && npm run startssr"
