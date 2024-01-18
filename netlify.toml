@@ -1,9 +1,15 @@
 [build]
-  command = "npm run build"  # Adjust based on your client-side build script
-  functions = "src/server"  # Directory where Netlify functions (server-side code) are built
-  publish = "build"  # Adjust based on your client-side build output directory
+  # Specify the build command
+  command = "npm run build"
 
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/src/server/:splat"
-  status = 200
+[[plugins]]
+  # Install the Node.js version specified in your package.json
+  package = "netlify-plugin-install-node"
+  [plugins.inputs]
+    node_version = "14"
+
+[[functions]]
+  # Define your serverless function
+  name = "server"
+  path = "src/server"
+  command = "npm run build && npm run startssr"
