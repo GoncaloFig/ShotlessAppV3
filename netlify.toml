@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"  # Adjust based on your client-side build script
-  functions = "src/server"  # Directory where Netlify functions (server-side code) are built
+  functions = "server-build"  # Directory where Netlify functions (server-side code) are built
   publish = "build"  # Adjust based on your client-side build output directory
 
 [[redirects]]
