@@ -34,7 +34,7 @@
     "eject": "react-scripts eject",
     "startssr": "node server/index.js",
     "dev:build-client": "react-scripts start",
-    "dev:build-server": "webpack --config webpack.config.js --mode=development -w",
+    "dev:build-server": "webpack --config webpack.config.js --mode=production -w",
     "dev:start": "nodemon ./server-build/index.js",
     "dev": "npm-run-all --parallel dev:build-server dev:start"
   },
