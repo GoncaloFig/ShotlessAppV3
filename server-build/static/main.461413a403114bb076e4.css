@@ -1,0 +1,465 @@
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/GameContainer.scss ***!
+  \************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Titan+One&display=swap);
+/*!*******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/EditPlayersContainer.scss ***!
+  \*******************************************************************************************************************************/
+@media (min-width: 1170px) {
+  .playersEditContainer {
+    height: 494px;
+    width: 50vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14% 66% 19%;
+    position: relative;
+  }
+  .playersEditListContainer {
+    background-color: transparent;
+    padding: 25px 10px 15px 10px;
+    display: grid;
+    width: 40vw;
+    margin: 0 auto;
+  }
+  .playersEditListOverflow {
+    background-color: transparent;
+    overflow-y: scroll;
+    padding: 0 14px;
+    height: 30vh;
+  }
+  .editPlayerContainer {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .editPlayerBtn {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 341px;
+    height: 72px;
+    font-weight: 653;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+  .editTitleContainer {
+    position: relative;
+    display: flex;
+    width: 36vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .disabledButton {
+    background: #c1c1c1 !important;
+  }
+  .editPlayersTitle {
+    display: flex;
+    justify-content: center;
+  }
+  .playersInputContainer {
+    display: grid;
+    grid-template-columns: 84% 8% 8%;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersInputContainer input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .playersNewInputContainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersNewInputContainer input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .deletePlayerIcon {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgba(187, 10, 10, 0.5490196078);
+    cursor: pointer;
+  }
+  .editPlayerIcon {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #3d99fe;
+    cursor: pointer;
+  }
+  .saveEditPlayerIcon {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #127522;
+    cursor: pointer;
+  }
+  .goBackFromPlayers {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 20px;
+  }
+  .newPlayerTitle {
+    text-align: center;
+  }
+  .savePlayerBtn {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 225px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 33px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    display: flex;
+  }
+}
+@media (max-width: 1170px) {
+  .playersEditContainer {
+    height: 494px;
+    width: 93vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 14% 66% 19%;
+    position: relative;
+  }
+  .playersEditListContainer {
+    background-color: transparent;
+    padding: 25px 10px 15px 10px;
+    display: grid;
+  }
+  .playersEditListOverflow {
+    background-color: transparent;
+    overflow: scroll;
+    padding: 0 14px;
+    height: 30vh;
+  }
+  .editPlayerContainer {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .editPlayerBtn {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 341px;
+    height: 72px;
+    font-weight: 653;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .editTitleContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .disabledButton {
+    background: #c1c1c1 !important;
+  }
+  .editPlayersTitle {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .playersInputContainer {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersInputContainer input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .playersNewInputContainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0px 0px 13px 0px;
+  }
+  .playersNewInputContainer input {
+    width: 90%;
+    padding: 11px 7px;
+    border-radius: 10px;
+    border: 2px solid #c4c4c5;
+    font-size: 20px;
+  }
+  .deletePlayerIcon {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: rgba(187, 10, 10, 0.5490196078);
+  }
+  .editPlayerIcon {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #3d99fe;
+    cursor: pointer;
+  }
+  .saveEditPlayerIcon {
+    font-size: x-large;
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: #127522;
+    cursor: pointer;
+  }
+  .goBackFromPlayers {
+    position: absolute;
+    font-size: 20px;
+  }
+  .newPlayerTitle {
+    text-align: center;
+  }
+  .savePlayerBtn {
+    background: #3D99FE;
+    border: 3px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 225px;
+    height: 52px;
+    font-weight: 600;
+    font-size: 33px;
+    color: #FFFFFF;
+    font-variation-settings: "slnt" 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    display: flex;
+    cursor: pointer;
+  }
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/GameContainer.scss (1) ***!
+  \****************************************************************************************************************************/
+@media (min-width: 1170px) {
+  .gameContainer {
+    background: #E3F1FB;
+    height: 34vh;
+    width: 100vw;
+  }
+  .drawBtn {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background: #3D99FE;
+    border: 5px solid #F5F5F5;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .shotlessTitle {
+    top: 25px;
+    font-family: "Titan One", cursive;
+    font-weight: 800;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #202124;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+  }
+  .disabledGoButton {
+    background: #c1c1c1 !important;
+  }
+}
+@media (max-width: 1170px) {
+  .gameContainer {
+    background: #E3F1FB;
+    height: 34vh;
+    width: 100vw;
+  }
+  .drawBtn {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    background: #3D99FE;
+    border: 5px solid #F5F5F5;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .shotlessTitle {
+    top: 25px;
+    font-family: "Titan One", cursive;
+    font-weight: 800;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #202124;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 2px;
+  }
+  .disabledGoButton {
+    background: #c1c1c1 !important;
+  }
+}
+/*!*****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/CountDownContainer.scss ***!
+  \*****************************************************************************************************************************/
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/PlayerBadge.scss ***!
+  \**********************************************************************************************************************/
+.playerBadge {
+  background: #EAE9EC;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 332px;
+  height: 70px;
+  font-weight: 653;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  color: #454545;
+  font-variation-settings: "slnt" 0;
+  background: url(a3ff01fb34a1370bde0d.png);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/PlayersContainer.scss ***!
+  \***************************************************************************************************************************/
+.playersListContainer {
+  background-color: transparent;
+  justify-content: center;
+  padding: 25px 10px 15px 10px;
+  display: grid;
+  grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+}
+
+.addPlayerContainer {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addPlayerBtn {
+  background: #3D99FE;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 341px;
+  height: 72px;
+  font-weight: 653;
+  font-size: 48px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.noPlayersDiv {
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  /* width: 332px; */
+  /* height: 70px; */
+  /* font-weight: 653; */
+  font-size: 25px;
+  color: #FFFFFF;
+  font-variation-settings: "slnt" 0;
+  margin: 0 0 30px 0;
+  color: #454545;
+}
+
+@media (min-width: 1170px) {
+  .playersContainer {
+    height: 66vh;
+    width: 20vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .playersListOverflow {
+    background-color: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+    height: 50vh;
+  }
+}
+@media (max-width: 1170px) {
+  .playersContainer {
+    height: 66vh;
+    width: 100vw;
+    background: #FFFFFF;
+    border-radius: 23px 23px 0px 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .playersListOverflow {
+    background-color: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+    height: 50vh;
+  }
+}
