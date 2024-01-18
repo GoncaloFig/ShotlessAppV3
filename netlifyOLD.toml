@@ -1,9 +1,0 @@
-[build]
-  command = "npm run build"  # Adjust based on your client-side build script
-  functions = "src/server"  # Directory where Netlify functions (server-side code) are built
-  publish = "build"  # Adjust based on your client-side build output directory
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/src/server/:splat"
-  status = 200

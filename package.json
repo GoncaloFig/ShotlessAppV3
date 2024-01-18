@@ -28,9 +28,15 @@
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {
-    "startssr": "node server-build/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "dev:build-server": "webpack --config webpack.config.js --mode=production -w"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "startssr": "node src/server/index.js",
+    "dev:build-client": "react-scripts start",
+    "dev:build-server": "webpack --config webpack.config.js --mode=production -w",
+    "dev:start": "nodemon ./server-build/index.js",
+    "dev": "npm-run-all --parallel dev:build-server dev:start"
   },
   "eslintConfig": {
     "extends": [
